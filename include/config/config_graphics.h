@@ -28,7 +28,7 @@
 
 // Enables Puppyprint, a display library for text and large images.
 // Automatically enabled when PUPPYPRINT_DEBUG is enabled.
-// #define PUPPYPRINT
+#define PUPPYPRINT
 
 // Disables AA (Improves console performance but causes visible seams between unconnected geometry).
 // #define DISABLE_AA
@@ -68,7 +68,7 @@
 
 // Uses the star object's model in the star dance cutscene.
 // This has a side effect of making the star dance star also transparent when Mario collects a transparent star.
-// #define STAR_DANCE_USES_STARS_MODEL
+#define STAR_DANCE_USES_STARS_MODEL
 
 // Lightweight directional lighting engine by Fazana. Intended for giving proximity and positional pointlights to small objects.
 // NOTE: Still breaks occasionally, and PUPPYLIGHT_NODE might not work in areas that aren't area 1.
