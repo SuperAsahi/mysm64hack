@@ -67,6 +67,7 @@
 #define MODEL_WF_TOWER_SQUARE_PLATORM          0x2D        // wf_geo_000B10
 #define MODEL_WF_TOWER_SQUARE_PLATORM_UNUSED   0x2E        // wf_geo_000B38 - unused & duplicated
 #define MODEL_WF_TOWER_SQUARE_PLATORM_ELEVATOR 0x2F        // wf_geo_000B60 - elevator platorm
+#define MODEL_WMOTR_WOODEN_DOOR                0x30        // wooden_door_geo
 
 // Level model IDs
 
@@ -285,6 +286,9 @@
 // bowser 1
 
 // wmotr
+#define MODEL_CASTLE_METAL_DOOR                0x29        // metal_door_geo
+#define MODEL_CASTLE_CASTLE_DOOR_UNUSED        0x1C        // castle_door_geo - unused, original id
+#define MODEL_BOB_BUBBLY_TREE                  0x17        // bubbly_tree_geo
 
 // bowser 2
 #define MODEL_BOWSER_2_TILTING_ARENA              0x36        // bowser_2_geo_000170

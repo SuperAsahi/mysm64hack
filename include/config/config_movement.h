@@ -12,7 +12,7 @@
 
 // Allows Mario to aim towards a new direction at the end of turning around,
 // and allows Mario to turn around multiple times in a row.
-// #define RESET_DIRECTION_WHEN_TURNING_AROUND
+#define RESET_DIRECTION_WHEN_TURNING_AROUND
 
 // Improved hanging:
 // - Doesn't require holding down the A button.
