@@ -4,6 +4,7 @@ const GeoLayout ttc_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 0, -7122, 0, ttc_dl_floor_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 800, -2493, -528, -93, 81, -81, ttc_dl_large_tree_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -918, -4368, -4166, 90, 0, -17, ttc_dl_Plane_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 0, -7162, 0, 90, 0, 0, ttc_dl_stairs_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 28, 12, -37, ttc_dl_walls_mesh_layer_1),

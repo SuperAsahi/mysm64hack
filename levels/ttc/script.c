@@ -76,7 +76,7 @@ const LevelScript level_ttc_entry[] = {
 		TERRAIN(ttc_area_1_collision),
 		MACRO_OBJECTS(ttc_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_WATER),
-		TERRAIN_TYPE(TERRAIN_GRASS),
+		TERRAIN_TYPE(TERRAIN_WATER),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
 	END_AREA(),
