@@ -40,7 +40,7 @@ alphabetical file name order. They can be located in either `sound/sequences/`
 or `sound/sequences/<version>/`, and can optionally be given in disassembled
 form -- see `include/seq_macros.inc` for more details on the format.
 
-The repo gitignores .m64 and .aiff files by default, unless they include
+The repo git ignores .m64 and .aiff files by default, unless they include
 "custom" somewhere in the name (including in a directory name). Thus, for new
 custom-made samples and sequences it is advisable to include that substring
 in the file name (this also helps distinguish custom sounds from ones from
