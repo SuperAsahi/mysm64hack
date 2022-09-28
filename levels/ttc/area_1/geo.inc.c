@@ -36,8 +36,8 @@ const GeoLayout ttc_dl_room02_geo[] = {
 const GeoLayout ttc_dl_room03_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -3629, 10386, -10639, ttc_dl_floor_001_mesh_layer_1),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -3621, 12027, -10648, ttc_dl_walls_001_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -3642, 10386, -10560, 0, -90, 0, ttc_dl_floor_001_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -3633, 12027, -10553, 0, -90, 0, ttc_dl_walls_001_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
