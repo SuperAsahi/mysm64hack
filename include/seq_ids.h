@@ -47,6 +47,7 @@ enum SeqId {
     SEQ_EVENT_CUTSCENE_LAKITU,        // 0x22 (not in JP)
     SEQ_LEVEL_ORGAN,                  // 0x23 Toothed Wheel
     SEQ_LEVEL_WATER2,                 // 0x24 DKC Aquatic Ambiance
+    SEQ_LEVEL_TOWER_TOP,              // 0x25 PMD2 - Through the Sea of Time
     SEQ_COUNT
 };
 
