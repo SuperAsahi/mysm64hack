@@ -35,6 +35,6 @@
     "20_cutscene_ending": ["23"],
     "21_menu_file_select": ["24"],
     "22_cutscene_lakitu": {"ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"], "banks": ["1B"]},
-    "23_custom_toothed_wheel": ["1D_bowser_organ"],
-    "24_custom_dkc_aquatic": ["0B"]
+    "23_custom_toothed_wheel": ["19"],
+    "24_custom_dkc_aquatic": ["25"]
 }
