@@ -113,4 +113,6 @@ extern const LevelScript level_rr_entry[];
 
 #include "levels/rr/header.inc.h"
 
+#include "levels/rr/mario/collision_header.h"
+
 #endif

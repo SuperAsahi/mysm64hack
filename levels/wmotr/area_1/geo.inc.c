@@ -3,12 +3,12 @@
 const GeoLayout wmotr_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 0, -5000, 0, wmotr_dl_deathplane_mesh_layer_5),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 261, 2468, 572, wmotr_dl_flame_mesh_layer_5),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -53, -43, 663, wmotr_dl_Ground_mesh_layer_1),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 31, 281, 697, wmotr_dl_tower_mesh_layer_1),
-		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -464, 762, 848, 103, 116, 10, wmotr_dl_window01_mesh_layer_5),
-		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -268, 1263, 639, 119, 77, 0, wmotr_dl_window02_mesh_layer_5),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, -87, 9846, 2496, wmotr_dl_clouds_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, 154, 9154, -1907, 0, 29, -180, wmotr_dl_clouds_001_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -6084, -5118, 3795, -8, -58, 175, wmotr_dl_clouds_002_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -2106, -4771, -7569, -172, 79, -5, wmotr_dl_clouds_003_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2713, -6220, 1738, 0, -15, 0, wmotr_dl_ground_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 31, -3921, 697, 0, -180, 0, wmotr_dl_tower_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
