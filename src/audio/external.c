@@ -299,6 +299,8 @@ u8 sBackgroundMusicDefaultVolume[] = {
     80,  // SEQ_LEVEL_ORGAN
     70,  // SEQ_LEVEL_WATER2
     75,  // SEQ_LEVEL_TOWER_TOP
+    75,  // SEQ_LEVEL_CAVE
+    70,  // SEQ_LEVEL_THRONE
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

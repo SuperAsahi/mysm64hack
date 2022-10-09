@@ -3824,7 +3824,7 @@ Gfx mat_jrb_dl_floor_layer1_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
 	gsDPSetFogColor(42, 4, 71, 255),
-	gsSPFogPosition(880, 1000),
+	gsSPFogPosition(860, 1000),
 	gsSPSetGeometryMode(G_FOG),
 	gsDPSetCycleType(G_CYC_2CYCLE),
 	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_OPA_SURF2),

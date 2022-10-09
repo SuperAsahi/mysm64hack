@@ -48,6 +48,8 @@ enum SeqId {
     SEQ_LEVEL_ORGAN,                  // 0x23 Toothed Wheel
     SEQ_LEVEL_WATER2,                 // 0x24 DKC Aquatic Ambiance
     SEQ_LEVEL_TOWER_TOP,              // 0x25 PMD2 - Through the Sea of Time
+    SEQ_LEVEL_CAVE,                   // 0x26 SoM - Whisper and Mantra
+    SEQ_LEVEL_THRONE,                 // 0x27 SW6 - Emperor's Throne Room
     SEQ_COUNT
 };
 
