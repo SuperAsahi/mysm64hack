@@ -17,6 +17,7 @@ const GeoLayout jrb_area_1_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 852, 1950, 10323, -38, 94, -136, jrb_dl_crystal_010_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 5183, 1866, 8443, -40, -45, -113, jrb_dl_crystal_011_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 829, 540, -882, jrb_dl_floor_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 836, 540, -6365, 0, 68, 0, jrb_dl_waluigi_david_sfw_v2_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 1158, 1487, -7969, 90, 0, -23, jrb_dl_waluigi_poster_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
