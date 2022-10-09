@@ -226,7 +226,7 @@ TARGET_STRING := sm64
 UNF ?= 0
 $(eval $(call validate-option,UNF,0 1))
 ifeq ($(UNF),1)
-  DEFINES += UNF=0
+  DEFINES += UNF=1
   SRC_DIRS += src/usb
   USE_DEBUG := 1
 endif

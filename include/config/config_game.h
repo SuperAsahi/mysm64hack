@@ -57,7 +57,7 @@
 // J, Q, V, X, Z, ¨, !, !!, ?, &, %, ., and the beta key.
 // [MAKE SURE TO INCLUDE EU AND JP/SH BASEROMS IN THE REPO TO OBTAIN THE ASSETS]
 // If this is disabled, backup assets will be used.
-// #define COMPLETE_EN_US_SEGMENT2
+#define COMPLETE_EN_US_SEGMENT2
 
 // Removes multi-language cake screen.
 #define EU_CUSTOM_CAKE_FIX
@@ -70,4 +70,4 @@
 
 // The level that the game starts with immediately after file select.
 // The levelscript needs to have a MARIO_POS command for this to work.
-#define START_LEVEL LEVEL_CASTLE_GROUNDS
+#define START_LEVEL LEVEL_WMOTR
