@@ -13,7 +13,7 @@ extern u8 jrb_dl_bob_textures_04800_rgba16_ci8_pal_rgba16[];
 extern u8 jrb_dl_gold_ci8[];
 extern u8 jrb_dl_gold_ci8_pal_rgba16[];
 extern u8 jrb_dl_wah01_64_rgba16[];
-extern Vtx jrb_dl_cave_mesh_layer_1_vtx_0[347];
+extern Vtx jrb_dl_cave_mesh_layer_1_vtx_0[331];
 extern Gfx jrb_dl_cave_mesh_layer_1_tri_0[];
 extern Vtx jrb_dl_crystal_mesh_layer_1_vtx_0[51];
 extern Gfx jrb_dl_crystal_mesh_layer_1_tri_0[];
