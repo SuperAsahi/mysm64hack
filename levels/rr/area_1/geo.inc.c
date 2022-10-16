@@ -83,6 +83,7 @@ const GeoLayout rr_dl_room04_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, 4563, 3393, 790, 36, 6, -103, rr_dl_clouds_009_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -1007, 3774, 694, 1, -11, -180, rr_dl_clouds_010_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -3858, 6935, 6960, 36, 6, -103, rr_dl_clouds_011_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -2734, 5337, -3306, 60, 122, -79, rr_dl_clouds_012_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 7946, 1009, -2317, 0, 31, 0, rr_dl_rainbow_bridge_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
