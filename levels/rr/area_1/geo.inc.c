@@ -68,6 +68,7 @@ const GeoLayout rr_dl_room02_geo[] = {
 const GeoLayout rr_dl_room03_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 7290, 1082, -3254, 0, 32, 0, rr_dl_arrow_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -4252, 6727, 7861, 38, -160, -69, rr_dl_clouds_007_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 6897, 937, -3644, 0, 41, 0, rr_dl_Ground_005_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 3537, 436, -6354, 7, 136, 2, rr_dl_Ground_006_mesh_layer_1),

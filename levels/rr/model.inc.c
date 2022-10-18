@@ -62,6 +62,10 @@ Lights1 rr_dl_water_layer1_area1_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
+Lights1 rr_dl_red_lights = gdSPDefLights1(
+	0x7F, 0x0, 0x0,
+	0xFF,0x0,0x0,0x28,0x28,0x28);
+
 Lights1 rr_dl_rainbow_layer1_area1_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
@@ -8056,6 +8060,26 @@ Gfx rr_dl_waterfall_001_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx rr_dl_arrow_mesh_layer_1_vtx_0[7] = {
+	{{{-31, 0, 68}, 0, {-16, 1008}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{31, 0, -31}, 0, {1008, -16}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-31, 0, -31}, 0, {-16, -16}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{31, 0, 68}, 0, {1008, 1008}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-68, 0, 68}, 0, {-16, 1008}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{68, 0, 68}, 0, {1008, 1008}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{0, 0, 136}, 0, {1008, 1008}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx rr_dl_arrow_mesh_layer_1_tri_0[] = {
+	gsSPVertex(rr_dl_arrow_mesh_layer_1_vtx_0 + 0, 7, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSP1Triangle(3, 0, 4, 0),
+	gsSP1Triangle(3, 4, 5, 0),
+	gsSP1Triangle(5, 4, 6, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx rr_dl_clouds_007_mesh_layer_5_vtx_0[4] = {
 	{{{-3081, 0, 3081}, 0, {-1016, 2008}, {0x0, 0x7F, 0x0, 0xFF}}},
 	{{{3081, 0, 3081}, 0, {-40, 2008}, {0x0, 0x7F, 0x0, 0xFF}}},
@@ -10752,6 +10776,14 @@ Gfx mat_revert_rr_dl_water_layer1_area1[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_rr_dl_red[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPSetLights1(rr_dl_red_lights),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_rr_dl_rainbow_layer1_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
@@ -11103,6 +11135,12 @@ Gfx rr_dl_waterfall_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_rr_dl_water_layer1_area1),
 	gsSPDisplayList(rr_dl_waterfall_001_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_rr_dl_water_layer1_area1),
+	gsSPEndDisplayList(),
+};
+
+Gfx rr_dl_arrow_mesh_layer_1[] = {
+	gsSPDisplayList(mat_rr_dl_red),
+	gsSPDisplayList(rr_dl_arrow_mesh_layer_1_tri_0),
 	gsSPEndDisplayList(),
 };
 
