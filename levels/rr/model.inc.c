@@ -22,6 +22,10 @@ Lights1 rr_dl_stone_layer1_area1_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
+Lights1 rr_dl_stone_no_bc_layer1_area1_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF,0xFF,0xFF,0x28,0x28,0x28);
+
 Lights1 rr_dl_vines01_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
@@ -4496,7 +4500,7 @@ Gfx rr_dl_Ground_001_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx rr_dl_temple_mesh_layer_1_vtx_0[453] = {
+Vtx rr_dl_temple_mesh_layer_1_vtx_0[449] = {
 	{{{-2499, 1278, -1115}, 0, {1241, -1811}, {0x0, 0xA6, 0xA6, 0xFF}}},
 	{{{-1072, 1278, -1115}, 0, {1241, -201}, {0x0, 0xA6, 0xA6, 0xFF}}},
 	{{{1072, 1278, -1115}, 0, {1241, 2217}, {0x0, 0x81, 0x0, 0xFF}}},
@@ -4934,10 +4938,6 @@ Vtx rr_dl_temple_mesh_layer_1_vtx_0[453] = {
 	{{{-2476, 1299, -1162}, 0, {1449, 3800}, {0x0, 0x0, 0x81, 0xFF}}},
 	{{{-1499, 1299, -1162}, 0, {1449, 2699}, {0x0, 0x0, 0x81, 0xFF}}},
 	{{{-1499, 307, -1162}, 0, {330, 2699}, {0x0, 0x0, 0x81, 0xFF}}},
-	{{{-1499, 307, -1162}, 0, {330, 2318}, {0x7F, 0x0, 0x0, 0xFF}}},
-	{{{-1499, 1299, -1162}, 0, {1449, 2318}, {0x7F, 0x0, 0x0, 0xFF}}},
-	{{{-1499, 1299, 1173}, 0, {1449, -315}, {0x7F, 0x0, 0x0, 0xFF}}},
-	{{{-1499, 307, 1173}, 0, {330, -315}, {0x7F, 0x0, 0x0, 0xFF}}},
 	{{{-1499, 307, 1173}, 0, {330, -683}, {0x0, 0x0, 0x7F, 0xFF}}},
 	{{{-1499, 1299, 1173}, 0, {1449, -683}, {0x0, 0x0, 0x7F, 0xFF}}},
 	{{{-2476, 1299, 1173}, 0, {1449, -1784}, {0x0, 0x0, 0x7F, 0xFF}}},
@@ -5228,7 +5228,18 @@ Gfx rr_dl_temple_mesh_layer_1_tri_0[] = {
 	gsSP1Triangle(8, 10, 11, 0),
 	gsSP1Triangle(12, 13, 14, 0),
 	gsSP1Triangle(12, 14, 15, 0),
-	gsSPVertex(rr_dl_temple_mesh_layer_1_vtx_0 + 449, 4, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx rr_dl_temple_mesh_layer_1_vtx_1[4] = {
+	{{{-1499, 307, -1162}, 0, {330, 2318}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{-1499, 1299, -1162}, 0, {1449, 2318}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{-1499, 1299, 1173}, 0, {1449, -315}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{-1499, 307, 1173}, 0, {330, -315}, {0x7F, 0x0, 0x0, 0xFF}}},
+};
+
+Gfx rr_dl_temple_mesh_layer_1_tri_1[] = {
+	gsSPVertex(rr_dl_temple_mesh_layer_1_vtx_1 + 0, 4, 0),
 	gsSP1Triangle(0, 1, 2, 0),
 	gsSP1Triangle(0, 2, 3, 0),
 	gsSPEndDisplayList(),
@@ -10471,6 +10482,43 @@ Gfx mat_revert_rr_dl_stone_layer1_area1[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_rr_dl_stone_no_bc_layer1_area1[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
+	gsDPSetFogColor(197, 216, 255, 255),
+	gsSPFogPosition(985, 1000),
+	gsSPSetGeometryMode(G_FOG),
+	gsDPSetCycleType(G_CYC_2CYCLE),
+	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetTextureLUT(G_TT_RGBA16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, rr_dl_bob_textures_04800_rgba16_ci8_pal_rgba16),
+	gsDPTileSync(),
+	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadSync(),
+	gsDPLoadTLUTCmd(7, 90),
+	gsDPPipeSync(),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, rr_dl_bob_textures_04800_rgba16_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPSetLights1(rr_dl_stone_no_bc_layer1_area1_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_rr_dl_stone_no_bc_layer1_area1[] = {
+	gsDPPipeSync(),
+	gsSPClearGeometryMode(G_FOG),
+	gsDPSetCycleType(G_CYC_1CYCLE),
+	gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+	gsDPSetTextureLUT(G_TT_NONE),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_rr_dl_vines01[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, PRIMITIVE, 0),
@@ -10936,6 +10984,9 @@ Gfx rr_dl_temple_mesh_layer_1[] = {
 	gsSPDisplayList(mat_rr_dl_stone_layer1_area1),
 	gsSPDisplayList(rr_dl_temple_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_rr_dl_stone_layer1_area1),
+	gsSPDisplayList(mat_rr_dl_stone_no_bc_layer1_area1),
+	gsSPDisplayList(rr_dl_temple_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_rr_dl_stone_no_bc_layer1_area1),
 	gsSPEndDisplayList(),
 };
 
