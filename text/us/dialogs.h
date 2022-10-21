@@ -2017,31 +2017,31 @@ all. Now, I must be off.\n\
 Owww! Let me go!"))
 
 DEFINE_DIALOG(DIALOG_163, 1, 5, 30, 200, _("\
-Noooo! You've really\n\
-beaten me this time,\n\
-Mario! I can't stand\n\
-losing to you!\n\
+There's someone here?\n\
+I never thought I'd see\n\
+anyone again! I've been\n\
+stuck here for years,\n\
+with only this one bottle!\n\
 \n\
-My troops...worthless!\n\
-They've turned over all\n\
-the Power Stars! What?!\n\
-There are 120 in all???\n\
-\n\
-Amazing! There were some\n\
-in the castle that I\n\
-missed??!!\n\
+Why is the rum always\n\
+gone?\n\
 \n\
 \n\
-Now I see peace\n\
-returning to the world...\n\
-Oooo! I really hate that!\n\
-I can't watch--\n\
-I'm outta here!\n\
-Just you wait until next\n\
-time. Until then, keep\n\
-that Control Stick\n\
-smokin'!\n\
-Buwaa ha ha!"))
+\n\
+\n\
+...\n\
+\n\
+\n\
+By the way, I've heard\n\
+that there's a secret\n\
+island.\n\
+Look for it by the\n\
+piranha plant.\n\
+I've heard that it's\n\
+impossible to get to\n\
+though, so don't even\n\
+bother getting to it by\n\
+normal means."))
 
 DEFINE_DIALOG(DIALOG_164, 1, 4, 30, 200, _("\
 Mario! What's up, pal?\n\
