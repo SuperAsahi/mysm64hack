@@ -59,6 +59,7 @@ const GeoLayout rr_dl_room02_geo[] = {
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -11637, 4272, -4050, rr_dl_leaves_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -11283, 4346, -4822, rr_dl_leaves_001_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -11607, 4698, -4524, rr_dl_leaves_002_mesh_layer_1),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, -11356, 2670, -6393, rr_dl_sign_hitbox_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, -8632, 2642, -2423, -3, 25, -2, rr_dl_walkway_mesh_layer_5),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -10775, 3007, -4279, 0, -21, 0, rr_dl_waterfall_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -5998, 4179, 1847, 0, 145, 0, rr_dl_waterfall_001_mesh_layer_1),
