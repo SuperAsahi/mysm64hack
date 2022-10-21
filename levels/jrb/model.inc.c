@@ -6,6 +6,10 @@ Lights1 jrb_dl_marble_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
+Lights1 jrb_dl_invis_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF,0xFF,0xFF,0x28,0x28,0x28);
+
 Gfx jrb_dl_cave_i8_aligner[] = {gsSPEndDisplayList()};
 u8 jrb_dl_cave_i8[] = {
 	0x25, 0x22, 0x1f, 0x1f, 0x1b, 0x1b, 0x1e, 0x23, 
@@ -4395,6 +4399,51 @@ Gfx jrb_dl_pedestal_001_mesh_layer_1_tri_0[] = {
 	gsSP1Triangle(5, 6, 7, 0),
 	gsSP1Triangle(8, 5, 7, 0),
 	gsSP1Triangle(7, 9, 8, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx jrb_dl_sign_hitbox_mesh_layer_5_vtx_0[24] = {
+	{{{-43, -57, 41}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-43, 62, 41}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-43, 62, -26}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-43, -57, -26}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-43, -57, -26}, 0, {368, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{-43, 62, -26}, 0, {624, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{43, 62, -26}, 0, {624, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{43, -57, -26}, 0, {368, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{43, -57, -26}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{43, 62, -26}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{43, 62, 41}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{43, -57, 41}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{43, -57, 41}, 0, {368, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{43, 62, 41}, 0, {624, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-43, 62, 41}, 0, {624, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-43, -57, 41}, 0, {368, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-43, -57, -26}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{43, -57, -26}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{43, -57, 41}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-43, -57, 41}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{43, 62, -26}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-43, 62, -26}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-43, 62, 41}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{43, 62, 41}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx jrb_dl_sign_hitbox_mesh_layer_5_tri_0[] = {
+	gsSPVertex(jrb_dl_sign_hitbox_mesh_layer_5_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(jrb_dl_sign_hitbox_mesh_layer_5_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -9231,6 +9280,14 @@ Gfx mat_revert_jrb_dl_marble[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_jrb_dl_invis[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 0, 0, 0, 0, SHADE, 0, 0, 0, 0),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPSetLights1(jrb_dl_invis_lights),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_jrb_dl_gold[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT),
@@ -9385,6 +9442,12 @@ Gfx jrb_dl_pedestal_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_jrb_dl_marble),
 	gsSPDisplayList(jrb_dl_pedestal_001_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_jrb_dl_marble),
+	gsSPEndDisplayList(),
+};
+
+Gfx jrb_dl_sign_hitbox_mesh_layer_5[] = {
+	gsSPDisplayList(mat_jrb_dl_invis),
+	gsSPDisplayList(jrb_dl_sign_hitbox_mesh_layer_5_tri_0),
 	gsSPEndDisplayList(),
 };
 
