@@ -1993,6 +1993,51 @@ Gfx ttc_dl_doorblack_001_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx ttc_dl_doorblack_002_mesh_layer_1_vtx_0[24] = {
+	{{{-59, -174, 60}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-59, 86, 60}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-59, 86, -60}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-59, -174, -60}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-59, -174, -60}, 0, {368, 752}, {0x1, 0x0, 0x81, 0xFF}}},
+	{{{-59, 86, -60}, 0, {624, 752}, {0x1, 0x0, 0x81, 0xFF}}},
+	{{{85, 86, -58}, 0, {624, 496}, {0x1, 0x0, 0x81, 0xFF}}},
+	{{{85, -174, -58}, 0, {368, 496}, {0x1, 0x0, 0x81, 0xFF}}},
+	{{{85, -174, -58}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{85, 86, -58}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{85, 86, 62}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{85, -174, 62}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{85, -174, 62}, 0, {368, 240}, {0xFF, 0x0, 0x7F, 0xFF}}},
+	{{{85, 86, 62}, 0, {624, 240}, {0xFF, 0x0, 0x7F, 0xFF}}},
+	{{{-59, 86, 60}, 0, {624, -16}, {0xFF, 0x0, 0x7F, 0xFF}}},
+	{{{-59, -174, 60}, 0, {368, -16}, {0xFF, 0x0, 0x7F, 0xFF}}},
+	{{{-59, -174, -60}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{85, -174, -58}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{85, -174, 62}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-59, -174, 60}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{85, 86, -58}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-59, 86, -60}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-59, 86, 60}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{85, 86, 62}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx ttc_dl_doorblack_002_mesh_layer_1_tri_0[] = {
+	gsSPVertex(ttc_dl_doorblack_002_mesh_layer_1_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(ttc_dl_doorblack_002_mesh_layer_1_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx ttc_dl_floor_mesh_layer_1_vtx_0[15] = {
 	{{{-4471, 0, -986}, 0, {122, 414}, {0x0, 0x7F, 0x0, 0xFF}}},
 	{{{-4471, 0, 924}, 0, {122, 573}, {0x0, 0x7F, 0x0, 0xFF}}},
@@ -7429,6 +7474,12 @@ Gfx ttc_dl_doorblack_mesh_layer_1[] = {
 Gfx ttc_dl_doorblack_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_ttc_dl_black),
 	gsSPDisplayList(ttc_dl_doorblack_001_mesh_layer_1_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx ttc_dl_doorblack_002_mesh_layer_1[] = {
+	gsSPDisplayList(mat_ttc_dl_black),
+	gsSPDisplayList(ttc_dl_doorblack_002_mesh_layer_1_tri_0),
 	gsSPEndDisplayList(),
 };
 
