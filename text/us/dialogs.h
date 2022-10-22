@@ -2013,7 +2013,7 @@ By the way, I've heard\n\
 that there's a secret\n\
 island.\n\
 Look for it by the\n\
-piranha plant.\n\
+1up on the ledge.\n\
 I've heard that it's\n\
 impossible to get to\n\
 though, so don't even\n\
