@@ -2,15 +2,15 @@ Lights1 jrb_dl_backboard_lights = gdSPDefLights1(
 	0x2D, 0x1E, 0x8,
 	0x63,0x45,0x1C,0x28,0x28,0x28);
 
+Lights1 jrb_dl_invis_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF,0xFF,0xFF,0x28,0x28,0x28);
+
 Lights1 jrb_dl_floor_layer1_area1_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
 Lights1 jrb_dl_marble_lights = gdSPDefLights1(
-	0x7F, 0x7F, 0x7F,
-	0xFF,0xFF,0xFF,0x28,0x28,0x28);
-
-Lights1 jrb_dl_invis_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
@@ -3223,7 +3223,7 @@ Gfx jrb_dl_backboard_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx jrb_dl_cave_mesh_layer_1_vtx_0[331] = {
+Vtx jrb_dl_cave_mesh_layer_1_vtx_0[338] = {
 	{{{859, -1403, -584}, 0, {-378, 1599}, {0x7A, 0x1B, 0x9C, 0xFF}}},
 	{{{1292, -2549, -584}, 0, {-378, 2082}, {0x60, 0x21, 0x9C, 0xFF}}},
 	{{{1615, -2401, 0}, 0, {-16, 2020}, {0x7A, 0x1B, 0x9C, 0xFF}}},
@@ -3555,6 +3555,13 @@ Vtx jrb_dl_cave_mesh_layer_1_vtx_0[331] = {
 	{{{4416, -12852, -725}, 0, {-3737, 11840}, {0x0, 0x0, 0x0, 0x0}}},
 	{{{3497, -12471, -725}, 0, {-2963, 11518}, {0x0, 0x0, 0x0, 0x0}}},
 	{{{3238, -13055, -725}, 0, {-2745, 12010}, {0x0, 0x0, 0x0, 0x0}}},
+	{{{11833, 4554, -1462}, 0, {-1828, -2830}, {0x7B, 0x39, 0x9D, 0xFF}}},
+	{{{11574, 3597, -1735}, 0, {-2167, -2024}, {0x77, 0x76, 0xA5, 0xFF}}},
+	{{{11339, 2637, -1451}, 0, {-1815, -1215}, {0x46, 0x45, 0x9D, 0xFF}}},
+	{{{11964, 4947, -792}, 0, {-998, -3161}, {0x7B, 0x44, 0x9D, 0xFF}}},
+	{{{11396, 2630, -107}, 0, {-149, -1209}, {0x2F, 0x2B, 0x9C, 0xFF}}},
+	{{{11265, 2237, -777}, 0, {-979, -877}, {0x4E, 0x4D, 0x9E, 0xFF}}},
+	{{{11890, 4546, -118}, 0, {-162, -2824}, {0x33, 0x2F, 0x9D, 0xFF}}},
 };
 
 Gfx jrb_dl_cave_mesh_layer_1_tri_0[] = {
@@ -3862,6 +3869,12 @@ Gfx jrb_dl_cave_mesh_layer_1_tri_0[] = {
 	gsSP1Triangle(8, 10, 11, 0),
 	gsSP1Triangle(12, 13, 14, 0),
 	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(jrb_dl_cave_mesh_layer_1_vtx_0 + 331, 7, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(3, 0, 2, 0),
+	gsSP1Triangle(2, 4, 3, 0),
+	gsSP1Triangle(2, 5, 4, 0),
+	gsSP1Triangle(4, 6, 3, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -4870,6 +4883,96 @@ Gfx jrb_dl_crystal_011_mesh_layer_1_tri_0[] = {
 	gsSPVertex(jrb_dl_crystal_011_mesh_layer_1_vtx_0 + 46, 5, 0),
 	gsSP1Triangle(0, 1, 2, 0),
 	gsSP1Triangle(2, 3, 4, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx jrb_dl_crystal_hitbox_mesh_layer_5_vtx_0[24] = {
+	{{{-142, -84, 156}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, 185, 156}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, 185, -87}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, -84, -87}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, -84, -87}, 0, {368, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{-142, 185, -87}, 0, {624, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, 185, 156}, 0, {624, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, -84, 156}, 0, {368, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, -84, -87}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-142, -84, 156}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-142, 185, -87}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-142, 185, 156}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx jrb_dl_crystal_hitbox_mesh_layer_5_tri_0[] = {
+	gsSPVertex(jrb_dl_crystal_hitbox_mesh_layer_5_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(jrb_dl_crystal_hitbox_mesh_layer_5_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx jrb_dl_crystal_hitbox_001_mesh_layer_5_vtx_0[24] = {
+	{{{-142, -84, 156}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, 185, 156}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, 185, -87}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, -84, -87}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-142, -84, -87}, 0, {368, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{-142, 185, -87}, 0, {624, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, 185, 156}, 0, {624, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, -84, 156}, 0, {368, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-142, -84, -87}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, -84, -87}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, -84, 156}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-142, -84, 156}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{92, 185, -87}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-142, 185, -87}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-142, 185, 156}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{92, 185, 156}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx jrb_dl_crystal_hitbox_001_mesh_layer_5_tri_0[] = {
+	gsSPVertex(jrb_dl_crystal_hitbox_001_mesh_layer_5_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(jrb_dl_crystal_hitbox_001_mesh_layer_5_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -10355,6 +10458,14 @@ Gfx mat_revert_jrb_dl_crystal[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_jrb_dl_invis[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 0, 0, 0, 0, SHADE, 0, 0, 0, 0),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPSetLights1(jrb_dl_invis_lights),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_jrb_dl_floor_layer1_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, COMBINED, 0, 0, 0, COMBINED),
@@ -10433,14 +10544,6 @@ Gfx mat_jrb_dl_marble[] = {
 Gfx mat_revert_jrb_dl_marble[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_jrb_dl_invis[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 0, 0, 0, 0, SHADE, 0, 0, 0, 0),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(jrb_dl_invis_lights),
 	gsSPEndDisplayList(),
 };
 
@@ -10583,6 +10686,18 @@ Gfx jrb_dl_crystal_011_mesh_layer_1[] = {
 	gsSPDisplayList(mat_jrb_dl_crystal),
 	gsSPDisplayList(jrb_dl_crystal_011_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_jrb_dl_crystal),
+	gsSPEndDisplayList(),
+};
+
+Gfx jrb_dl_crystal_hitbox_mesh_layer_5[] = {
+	gsSPDisplayList(mat_jrb_dl_invis),
+	gsSPDisplayList(jrb_dl_crystal_hitbox_mesh_layer_5_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx jrb_dl_crystal_hitbox_001_mesh_layer_5[] = {
+	gsSPDisplayList(mat_jrb_dl_invis),
+	gsSPDisplayList(jrb_dl_crystal_hitbox_001_mesh_layer_5_tri_0),
 	gsSPEndDisplayList(),
 };
 

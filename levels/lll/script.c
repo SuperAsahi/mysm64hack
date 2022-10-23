@@ -90,7 +90,7 @@ const LevelScript level_lll_entry[] = {
 		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_LLL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x01, LEVEL_RR, 0x01, 0x03, WARP_CHECKPOINT),
+		WARP_NODE(0x01, LEVEL_RR, 0x01, 0x04, WARP_CHECKPOINT),
 		OBJECT(MODEL_BLACK_BOBOMB, 6737, 1179, -793, 0, 0, 0, 0x00000000, bhvBobomb),
 		OBJECT(MODEL_BULLY, 6559, 1176, 7578, 0, 0, 0, 0x00000000, bhvSmallBully),
 		OBJECT(MODEL_NONE, 3466, 1417, 8496, 0, -117, 0, 0x00000000, bhvCoinFormationSpawn),
@@ -98,10 +98,10 @@ const LevelScript level_lll_entry[] = {
 		OBJECT(MODEL_NONE, 5083, 1280, 3988, 0, 25, 0, (163 << 16), bhvSignOnWall),
 		OBJECT(MODEL_STAR, 4725, 3637, 2883, 0, 0, 0, 0x00000000, bhvStar),
 		OBJECT(MODEL_NONE, -995, 1401, 1694, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
-		OBJECT(MODEL_NONE, -29, 2356, 0, 0, 114, 0, (01 << 16), bhvWarp),
+		OBJECT(MODEL_NONE, -30, 2356, -13, 0, -66, 0, (01 << 16), bhvWarp),
 		TERRAIN(lll_area_1_collision),
 		MACRO_OBJECTS(lll_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_UNDERGROUND),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_LAVA),
 		TERRAIN_TYPE(TERRAIN_STONE),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

@@ -61,7 +61,7 @@ extern Vtx ttc_dl_stairs_mesh_layer_1_vtx_0[2361];
 extern Gfx ttc_dl_stairs_mesh_layer_1_tri_0[];
 extern Vtx ttc_dl_topwall_mesh_layer_1_vtx_0[24];
 extern Gfx ttc_dl_topwall_mesh_layer_1_tri_0[];
-extern Vtx ttc_dl_walls_mesh_layer_1_vtx_0[78];
+extern Vtx ttc_dl_walls_mesh_layer_1_vtx_0[84];
 extern Gfx ttc_dl_walls_mesh_layer_1_tri_0[];
 extern Vtx ttc_dl_Cube_mesh_layer_1_vtx_0[20];
 extern Gfx ttc_dl_Cube_mesh_layer_1_tri_0[];

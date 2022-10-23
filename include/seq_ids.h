@@ -50,6 +50,7 @@ enum SeqId {
     SEQ_LEVEL_TOWER_TOP,              // 0x25 PMD2 - Through the Sea of Time
     SEQ_LEVEL_CAVE,                   // 0x26 SoM - Whisper and Mantra
     SEQ_LEVEL_THRONE,                 // 0x27 SW6 - Emperor's Throne Room
+    SEQ_LEVEL_LAVA,                   // 0x28 DKC2 - Hot Head Hop
     SEQ_COUNT
 };
 
