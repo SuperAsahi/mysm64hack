@@ -1707,10 +1707,10 @@ Left: Black Hole\n\
 Arrow: You are here"))
 
 DEFINE_DIALOG(DIALOG_141, 1, 5, 150, 200, _("\
-One down, three to go!"))
+One down, four to go!"))
 
 DEFINE_DIALOG(DIALOG_142, 1, 5, 150, 200, _("\
-One more star!"))
+Just two more stars!"))
 
 DEFINE_DIALOG(DIALOG_143, 1, 6, 150, 200, _("\
 You've recovered eight of\n\

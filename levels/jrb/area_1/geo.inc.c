@@ -3,6 +3,7 @@
 const GeoLayout jrb_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2115, 1353, -164, 1, -147, -102, jrb_dl_backboard_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -2802, 1175, 4674, 90, 0, 0, jrb_dl_cave_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 4243, 595, -1453, -3, 18, 11, jrb_dl_crystal_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2145, 1514, -1085, -40, 10, -118, jrb_dl_crystal_001_mesh_layer_1),
@@ -17,6 +18,7 @@ const GeoLayout jrb_area_1_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 852, 1950, 10323, -38, 94, -136, jrb_dl_crystal_010_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 5183, 1866, 8443, -40, -45, -113, jrb_dl_crystal_011_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 829, 540, -882, jrb_dl_floor_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 2107, 1349, -159, 102, -50, 6, jrb_dl_keepout_sign_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 451, 671, -7483, 0, 24, 0, jrb_dl_pedestal_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 1891, 659, -8080, 0, 24, 0, jrb_dl_pedestal_001_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_TRANSPARENT, 2607, 1073, 9643, 0, 86, 0, jrb_dl_sign_hitbox_mesh_layer_5),

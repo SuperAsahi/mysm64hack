@@ -1,6 +1,6 @@
 void scroll_lll_dl_lava_mesh_layer_1_vtx_0() {
 	int i = 0;
-	int count = 26;
+	int count = 28;
 	int width = 32 * 0x20;
 	int height = 32 * 0x20;
 
