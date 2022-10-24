@@ -4976,6 +4976,51 @@ Gfx jrb_dl_crystal_hitbox_001_mesh_layer_5_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx jrb_dl_crystal_hitbox_002_mesh_layer_5_vtx_0[24] = {
+	{{{-133, -79, 139}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-133, 173, 139}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-133, 173, -66}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-133, -79, -66}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-133, -79, -66}, 0, {368, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{-133, 173, -66}, 0, {624, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{86, 173, -66}, 0, {624, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{86, -79, -66}, 0, {368, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{86, -79, -66}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{86, 173, -66}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{86, 173, 139}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{86, -79, 139}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{86, -79, 139}, 0, {368, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{86, 173, 139}, 0, {624, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-133, 173, 139}, 0, {624, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-133, -79, 139}, 0, {368, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-133, -79, -66}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{86, -79, -66}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{86, -79, 139}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-133, -79, 139}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{86, 173, -66}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-133, 173, -66}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-133, 173, 139}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{86, 173, 139}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+};
+
+Gfx jrb_dl_crystal_hitbox_002_mesh_layer_5_tri_0[] = {
+	gsSPVertex(jrb_dl_crystal_hitbox_002_mesh_layer_5_vtx_0 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(8, 10, 11, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(jrb_dl_crystal_hitbox_002_mesh_layer_5_vtx_0 + 16, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSP1Triangle(4, 6, 7, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx jrb_dl_floor_mesh_layer_1_vtx_0[135] = {
 	{{{-2293, 0, -6879}, 0, {-1412, -3181}, {0x0, 0x7F, 0x0, 0xFF}}},
 	{{{-764, 0, -8407}, 0, {-481, -4112}, {0x0, 0x7F, 0x0, 0xFF}}},
@@ -5635,6 +5680,34 @@ Gfx jrb_dl_pedestal_001_mesh_layer_1_tri_0[] = {
 	gsSP1Triangle(5, 6, 7, 0),
 	gsSP1Triangle(8, 5, 7, 0),
 	gsSP1Triangle(7, 9, 8, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx jrb_dl_Plane_mesh_layer_1_vtx_0[4] = {
+	{{{-4574, 0, 4574}, 0, {-16, 1008}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{4574, 0, 4574}, 0, {1008, 1008}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{4574, 0, -10761}, 0, {1008, -16}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{-4574, 0, -10761}, 0, {-16, -16}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Gfx jrb_dl_Plane_mesh_layer_1_tri_0[] = {
+	gsSPVertex(jrb_dl_Plane_mesh_layer_1_vtx_0 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx jrb_dl_Plane_001_mesh_layer_1_vtx_0[4] = {
+	{{{-4574, 0, 4574}, 0, {-16, 1008}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{4574, 0, 4574}, 0, {1008, 1008}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{4574, 0, -10761}, 0, {1008, -16}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{-4574, 0, -10761}, 0, {-16, -16}, {0xFF, 0xFF, 0xFF, 0xFF}}},
+};
+
+Gfx jrb_dl_Plane_001_mesh_layer_1_tri_0[] = {
+	gsSPVertex(jrb_dl_Plane_001_mesh_layer_1_vtx_0 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -10701,6 +10774,12 @@ Gfx jrb_dl_crystal_hitbox_001_mesh_layer_5[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx jrb_dl_crystal_hitbox_002_mesh_layer_5[] = {
+	gsSPDisplayList(mat_jrb_dl_invis),
+	gsSPDisplayList(jrb_dl_crystal_hitbox_002_mesh_layer_5_tri_0),
+	gsSPEndDisplayList(),
+};
+
 Gfx jrb_dl_floor_mesh_layer_1[] = {
 	gsSPDisplayList(mat_jrb_dl_floor_layer1_area1),
 	gsSPDisplayList(jrb_dl_floor_mesh_layer_1_tri_0),
@@ -10725,6 +10804,20 @@ Gfx jrb_dl_pedestal_001_mesh_layer_1[] = {
 	gsSPDisplayList(mat_jrb_dl_marble),
 	gsSPDisplayList(jrb_dl_pedestal_001_mesh_layer_1_tri_0),
 	gsSPDisplayList(mat_revert_jrb_dl_marble),
+	gsSPEndDisplayList(),
+};
+
+Gfx jrb_dl_Plane_mesh_layer_1[] = {
+	gsSPDisplayList(mat_jrb_dl_walls),
+	gsSPDisplayList(jrb_dl_Plane_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_jrb_dl_walls),
+	gsSPEndDisplayList(),
+};
+
+Gfx jrb_dl_Plane_001_mesh_layer_1[] = {
+	gsSPDisplayList(mat_jrb_dl_walls),
+	gsSPDisplayList(jrb_dl_Plane_001_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_jrb_dl_walls),
 	gsSPEndDisplayList(),
 };
 
